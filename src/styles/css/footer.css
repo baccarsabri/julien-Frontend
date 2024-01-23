@@ -1,0 +1,65 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 250px;
+}
+
+footer p {
+  width: 50%;
+  font-size: 25px;
+  margin-bottom: 80px;
+}
+
+footer span {
+  gap: 60px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer span .input_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+footer span .input_wrapper label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+footer span .input_wrapper input {
+  background: transparent;
+  outline: none;
+  border: 2px solid #CEC8D0;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+footer span .input_wrapper input::-webkit-input-placeholder {
+  color: rgba(19, 49, 95, 0.5);
+}
+
+footer span .input_wrapper input:-ms-input-placeholder {
+  color: rgba(19, 49, 95, 0.5);
+}
+
+footer span .input_wrapper input::-ms-input-placeholder {
+  color: rgba(19, 49, 95, 0.5);
+}
+
+footer span .input_wrapper input::placeholder {
+  color: rgba(19, 49, 95, 0.5);
+}

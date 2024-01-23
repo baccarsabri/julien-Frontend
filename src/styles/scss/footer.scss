@@ -1,0 +1,41 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 250px;
+
+    p {
+        width: 50%;
+        font-size: 25px;
+        margin-bottom: 80px;
+    }
+
+    span {
+        gap: 60px;
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        .input_wrapper {
+            display: flex;
+            flex-flow:  column nowrap;
+
+            label {
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            input {
+                background: transparent;
+                outline: none;
+                border: 2px solid #CEC8D0;
+                border-radius: 5px;
+                font-size: 18px;
+                padding: 8px 15px;
+
+                &::placeholder {
+                    color: rgba(19, 49, 95, .5);
+                }
+            }
+        }
+    }
+}

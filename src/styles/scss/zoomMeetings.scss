@@ -1,0 +1,39 @@
+#zoom_section {
+    padding-bottom: 30px;
+    background: #F8F9F9;
+
+    span {
+        margin-top: 50px;
+        width: 50%;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        gap: 30px;
+
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            
+            img {
+                height: 50px;
+            }
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-weight: 800;
+                font-size: 40px;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+    }
+}

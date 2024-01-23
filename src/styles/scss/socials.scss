@@ -1,0 +1,30 @@
+#socials_section {
+    padding-bottom: 30px;
+    background: #F8F9F9;
+
+    span {
+        margin-top: 50px;
+        width: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            
+            img {
+                height: 50px;
+            }
+
+            h3 {
+                font-weight: 800;
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+    }
+}

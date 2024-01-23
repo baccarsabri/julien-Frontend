@@ -1,0 +1,76 @@
+.blobed_background {
+  position: relative;
+}
+
+.blobed_background .bg_blob {
+  position: absolute;
+  z-index: -1;
+  opacity: 30%;
+}
+
+.blobed_background .bg_blob:first-child {
+  top: 25%;
+  right: 5%;
+}
+
+.blobed_background .bg_blob:nth-child(2) {
+  top: 5%;
+  right: 30%;
+}
+
+.blobed_background .bg_blob:nth-child(4) {
+  top: 40%;
+}
+
+.blobed_background .bg_blob:nth-child(3) {
+  top: 60%;
+  left: 31%;
+}
+
+.blobed_background .bg_blob:last-of-type {
+  top: 10%;
+  left: 10%;
+}
+
+button.join_button {
+  color: #fff;
+  background: #13315F;
+  border: none;
+  outline: none;
+  margin-top: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 25px 50px;
+  border-radius: 5px;
+}
+
+section, footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h1, footer h1 {
+  font-weight: 800;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+section h3, footer h3 {
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}

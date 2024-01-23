@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Landing from "./components/landing"
+import AppSection from './components/appSection';
+import Discount from "./components/discount"
+import FeaturedIn from './components/featuredIn';
+import Footer from './components/footer';
+import MeetNurse from './components/meetNurse';
+import MemberBenefits from './components/member_benefits';
+import Socials from './components/socials';
+import Testimonials from './components/testimonials';
+import WhatIs from './components/what_is';
+import ZoomMeetings from './components/zoomMeetings';
+
+const countDownDate = "Jan 30, 2024 15:37:25"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Landing />
+
+      <Discount countDownDate={countDownDate} />
+
+      <MemberBenefits />
+      <WhatIs />
+      <Socials />
+      <AppSection />
+      <ZoomMeetings />
+      <MeetNurse />
+      <FeaturedIn />
+      <Testimonials />
+
+      <Footer />
     </div>
   );
 }

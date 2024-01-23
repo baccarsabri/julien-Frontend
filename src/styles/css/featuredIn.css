@@ -1,0 +1,53 @@
+#featuredIn_section {
+  padding-bottom: 100px;
+}
+
+#featuredIn_section span {
+  margin-top: 100px;
+  gap: 50px 100px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#featuredIn_section span div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #CEC8D0;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#featuredIn_section span div:first-child {
+  background-image: url("../background_images/amazon_logo.png");
+}
+
+#featuredIn_section span div:nth-child(2) {
+  background-image: url("../background_images/parade_logo.png");
+}
+
+#featuredIn_section span div:nth-child(4) {
+  background-image: url("../background_images/examiner_logo.png");
+}
+
+#featuredIn_section span div:nth-child(5) {
+  background-image: url("../background_images/simon&schuster_logo.png");
+}
+
+#featuredIn_section span div:nth-child(6) {
+  background-image: url("../background_images/smiths_logo.png");
+}
+
+#featuredIn_section span div:last-child {
+  background-image: url("../background_images/ulysses_logo.png");
+}

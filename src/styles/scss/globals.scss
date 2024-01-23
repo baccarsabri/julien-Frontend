@@ -1,0 +1,72 @@
+.blobed_background {
+    position: relative;
+
+    .bg_blob {
+        position: absolute;
+        z-index: -1;
+        opacity: 30%;
+    
+        &:first-child {
+            top: 25%;
+            right: 5%;
+        }
+    
+        &:nth-child(2) {
+            top: 5%;
+            right: 30%;
+        }
+    
+        &:nth-child(4) {
+            top: 40%;
+        }
+    
+        &:nth-child(3) {
+            top: 60%;
+            left: 31%;
+        }
+    
+        &:last-of-type {
+            top: 10%;
+            left: 10%;
+        }
+    }
+}
+  
+button.join_button {
+    color:  #fff;
+    background: #13315F;
+    border: none;
+    outline: none;
+
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 25px 50px;
+    border-radius: 5px;
+}
+
+section, footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h1 {
+        font-weight: 800;
+        font-size: 45px;
+        margin: 0;
+        padding: 0;
+    
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-weight: 800;
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    
+        margin-bottom: 35px;
+    }
+}
