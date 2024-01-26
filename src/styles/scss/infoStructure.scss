@@ -5,6 +5,7 @@
     #info_wrapper {
         width: 80%;
         gap: 150px;
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -31,4 +32,27 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 1300px) {
+    .info_structure #info_wrapper {
+        gap: 50px;
+        width: calc(100% - 50px);
+
+        span#col {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .info_structure #info_wrapper {
+        align-items: center;
+        flex-flow: column nowrap;
+        width: 100%;
+
+        span#col {
+            width: calc(100% - 80px);
+        }
+    }
 }

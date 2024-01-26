@@ -5,7 +5,8 @@
 
 #socials_section span {
   margin-top: 50px;
-  width: 50%;
+  width: 100%;
+  gap: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,10 +17,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #socials_section span div {
@@ -35,12 +35,50 @@
           align-items: center;
 }
 
-#socials_section span div img {
+#socials_section span div:first-child img {
   height: 50px;
+  margin: 15px 0;
+}
+
+#socials_section span div img {
+  height: 80px;
 }
 
 #socials_section span div h3 {
   font-weight: 800;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #socials_section span div:first-child img {
+    height: 30px !important;
+    margin: 10px 0 !important;
+  }
+  #socials_section span div img {
+    height: 50px !important;
+  }
+  #socials_section span div h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #socials_section span {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  #socials_section span div:first-child img {
+    height: auto !important;
+    width: 55% !important;
+  }
+  #socials_section span div img {
+    height: auto !important;
+    width: 40% !important;
+  }
+  #socials_section span div h3 {
+    font-size: 27px;
+  }
 }

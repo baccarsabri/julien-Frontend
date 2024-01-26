@@ -36,3 +36,33 @@
         }
     }
 }
+
+@media only screen and (max-width: 980px) {
+    #benefits_section #card_wrapper {
+        padding: 0 30px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .card {
+            width: calc(50% - 40px);
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #benefits_section #card_wrapper {
+        padding: 0 30px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .card {
+            width: calc(100% - 40px);
+
+            p { font-size: 18px }
+        }
+    }
+}

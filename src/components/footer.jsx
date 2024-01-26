@@ -1,14 +1,9 @@
 import "../styles/css/footer.css";
+import BlobbedBackground from "../utils/blobbedBackground";
 
 const Footer = () => {
     return (
-        <footer className="blobed_background">
-            <img src="./bg_blob1.svg" className="bg_blob"></img>
-            <img src="./bg_blob2.svg" className="bg_blob"></img>
-            <img src="./bg_blob3.svg" className="bg_blob"></img>
-            <img src="./bg_blob4.svg" className="bg_blob"></img>
-            <img src="./bg_blob5.svg" className="bg_blob"></img>
-            
+        <BlobbedBackground id="" section_type="footer">
             <h1>Obtain Your Poop Guide</h1>
             <h3>Get your FREE 10 Poop Commandments</h3>
 
@@ -27,7 +22,7 @@ const Footer = () => {
             </span>
 
             <button className="join_button">Ready to join now</button>
-        </footer>
+        </BlobbedBackground>
     );
 }
 

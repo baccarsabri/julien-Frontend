@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7BD6D4;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F9F9;
+}
+
 .blobed_background {
   position: relative;
 }
@@ -63,6 +78,7 @@ section h1, footer h1 {
   font-size: 45px;
   margin: 0;
   padding: 0;
+  text-align: center;
   margin-top: 60px;
   margin-bottom: 10px;
 }
@@ -73,4 +89,36 @@ section h3, footer h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 780px) {
+  section h1, footer h1 {
+    font-size: 35px;
+    padding: 0 20px;
+  }
+  section h3, footer h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .blobed_background .bg_blob:nth-child(3) {
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .blobed_background .bg_blob:first-child {
+    display: none;
+  }
+  .blobed_background .bg_blob:nth-child(2) {
+    top: 15%;
+    right: 10px;
+  }
+  .blobed_background .bg_blob:nth-child(4) {
+    right: 15%;
+  }
+  .blobed_background .bg_blob:last-of-type {
+    left: -150px !important;
+  }
 }

@@ -1,0 +1,97 @@
+#signup_popup {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeIn 300ms ease-in-out;
+          animation: fadeIn 300ms ease-in-out;
+  z-index: 999;
+}
+
+#signup_popup.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#signup_popup form {
+  width: 600px;
+  border-radius: 5px;
+  padding: 50px;
+  background: #F8F9F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#signup_popup form #img_wrapper {
+  margin-top: -20px;
+  margin-right: -25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#signup_popup form #img_wrapper img {
+  cursor: pointer;
+}
+
+#signup_popup form h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+#signup_popup form label {
+  font-size: 20px;
+  font-weight: 600;
+  width: calc(100% - 100px);
+  margin-top: 25px;
+}
+
+#signup_popup form input {
+  width: calc(100% - 100px);
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 750px) {
+  #signup_popup form {
+    padding: 50px 30px;
+    width: calc(100% - 80px) !important;
+  }
+  #signup_popup form #img_wrapper {
+    margin-top: -20px;
+    margin-right: 5px !important;
+  }
+  #signup_popup form #img_wrapper img {
+    width: 18px;
+    height: 18px;
+  }
+  #signup_popup form input, #signup_popup form label {
+    width: 100% !important;
+  }
+}

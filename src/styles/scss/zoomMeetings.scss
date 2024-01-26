@@ -4,7 +4,7 @@
 
     span {
         margin-top: 50px;
-        width: 50%;
+        width: 80%;
 
         display: flex;
         flex-flow: row nowrap;
@@ -12,13 +12,13 @@
 
         gap: 30px;
 
+        img {
+            height: 500px;
+        }
+
         div {
             display: flex;
             flex-flow: column nowrap;
-            
-            img {
-                height: 50px;
-            }
 
             h1 {
                 margin: 0;
@@ -33,6 +33,27 @@
 
                 font-size: 22px;
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #zoom_section {
+        span {
+            width: calc(100% - 100px);
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #zoom_section {
+        span {
+            flex-flow: column nowrap;
+
+            img {
+                height: auto;
+                width: 100%;
             }
         }
     }

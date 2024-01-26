@@ -43,3 +43,44 @@
   margin-right: 15px;
   width: 30px;
 }
+
+@media only screen and (max-width: 980px) {
+  #benefits_section #card_wrapper {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #benefits_section #card_wrapper .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #benefits_section #card_wrapper {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #benefits_section #card_wrapper .card {
+    width: calc(100% - 40px);
+  }
+  #benefits_section #card_wrapper .card p {
+    font-size: 18px;
+  }
+}

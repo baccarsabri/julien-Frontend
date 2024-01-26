@@ -41,3 +41,29 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 1300px) {
+  .info_structure #info_wrapper {
+    gap: 50px;
+    width: calc(100% - 50px);
+  }
+  .info_structure #info_wrapper span#col {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .info_structure #info_wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+  }
+  .info_structure #info_wrapper span#col {
+    width: calc(100% - 80px);
+  }
+}

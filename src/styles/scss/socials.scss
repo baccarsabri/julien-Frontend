@@ -4,26 +4,73 @@
 
     span {
         margin-top: 50px;
-        width: 50%;
+        width: 100%;
+        gap: 30px;
+
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        justify-content: space-between;
-        gap: 30px;
+        justify-content: center;
 
         div {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
+
+            &:first-child img {
+                height: 50px;
+                margin: 15px 0;
+            }
             
             img {
-                height: 50px;
+                height: 80px;
             }
 
             h3 {
                 font-weight: 800;
-                font-size: 25px;
+                font-size: 22px;
                 text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #socials_section span {
+        div {
+            &:first-child img {
+                height: 30px !important;
+                margin: 10px 0 !important;
+            }
+
+            img {
+                height: 50px !important;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #socials_section span {
+        flex-flow: column nowrap;
+
+        div {
+            &:first-child img {
+                height: auto !important;
+                width: 55% !important;
+            }
+
+            img {
+                height: auto !important;
+                width: 40% !important;
+            }
+
+            h3 {
+                font-size: 27px;
             }
         }
     }

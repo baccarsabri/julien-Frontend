@@ -1,14 +1,11 @@
 import "../styles/css/landing.css";
+import BlobbedBackground from "../utils/blobbedBackground";
+
+import { showWindow } from "../utils/functions";
 
 const Landing = () => {
     return (
-        <section id="landing_section" className="blobed_background">
-            <img src="./bg_blob1.svg" className="bg_blob"></img>
-            <img src="./bg_blob2.svg" className="bg_blob"></img>
-            <img src="./bg_blob3.svg" className="bg_blob"></img>
-            <img src="./bg_blob4.svg" className="bg_blob"></img>
-            <img src="./bg_blob5.svg" className="bg_blob"></img>
-
+        <BlobbedBackground id="landing_section" section_type="section">
             <h1>Join The Butt Talks Community</h1>
             <h3>Super Charge Your Poop Health</h3>
 
@@ -16,8 +13,8 @@ const Landing = () => {
                 <img src="./play.png" />
             </div>
 
-            <button className="join_button">Ready to join now</button>
-        </section>
+            <button onClick={ showWindow } className="join_button">Ready to join now</button>
+        </BlobbedBackground>
     );
 }
 

@@ -4,7 +4,7 @@
     span {
         margin-top: 100px;
         gap: 50px 100px;
-        width: 60%;
+        width: calc(100% - 350px);
         display: flex;
         flex-flow:  row wrap;
         justify-content: center;
@@ -42,6 +42,25 @@
             &:last-child {
                 background-image: url('../background_images/ulysses_logo.png');
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1264px) {
+    #featuredIn_section span {
+        width: calc(100% - 150px);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #featuredIn_section span {
+        margin-top: 30px;
+        width: calc(100% - 20px) !important;
+        gap: 30px;
+
+        div {
+            width: 15vw !important;
+            height: 15vw !important;
         }
     }
 }

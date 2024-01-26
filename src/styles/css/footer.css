@@ -1,6 +1,5 @@
 footer {
   padding-top: 60px;
-  padding-bottom: 250px;
 }
 
 footer p {
@@ -62,4 +61,29 @@ footer span .input_wrapper input::-ms-input-placeholder {
 
 footer span .input_wrapper input::placeholder {
   color: rgba(19, 49, 95, 0.5);
+}
+
+footer button {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 780px) {
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  footer p {
+    width: calc(100% - 40px);
+  }
+  footer span {
+    gap: 30px;
+    width: calc(100% - 40px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
 }

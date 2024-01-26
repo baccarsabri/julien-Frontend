@@ -31,6 +31,8 @@ const Discount = ({ countDownDate }) => {
         setTimeUntil({ days, hours, minutes, seconds })
     }
 
+    const formatTime = (time) => (time < 10 ? "0" + time : time)
+
     useEffect(() => {
         const formatted_CountDownDate = new Date(countDownDate).getTime();
         setTime(formatted_CountDownDate);
@@ -47,28 +49,28 @@ const Discount = ({ countDownDate }) => {
             <span id="timer_wrapper">
                 <div className="cell">
                     <div id="num">
-                        <h1>{ timeUntil.days }</h1>
+                        <h1>{ formatTime(timeUntil.days) }</h1>
                     </div>
                     <h3>DAYS</h3>
                 </div>
 
                 <div className="cell">
                     <div id="num">
-                        <h1>{ timeUntil.hours }</h1>
+                        <h1>{ formatTime(timeUntil.hours) }</h1>
                     </div>
                     <h3>HOURS</h3>
                 </div>
 
                 <div className="cell">
                     <div id="num">
-                        <h1>{ timeUntil.minutes }</h1>
+                        <h1>{ formatTime(timeUntil.minutes) }</h1>
                     </div>
                     <h3>MINUTES</h3>
                 </div>
 
                 <div className="cell">
                     <div id="num">
-                        <h1>{ timeUntil.seconds }</h1>
+                        <h1>{ formatTime(timeUntil.seconds) }</h1>
                     </div>
                     <h3>SECONDS</h3>
                 </div>
