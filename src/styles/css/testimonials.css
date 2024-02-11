@@ -1,25 +1,20 @@
 #testimonials_section {
+  position: relative;
   background: #F8F9F9;
   padding-bottom: 100px;
 }
 
-#testimonials_section #test_wrapper {
-  width: 100%;
-  gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#testimonials_section #caroussel {
+  position: relative;
+  width: calc(280px * 3 + 220px);
 }
 
-#testimonials_section #test_wrapper .testimonial_card {
-  width: 280px;
+#testimonials_section #caroussel .owl-stage-outer {
+  padding-right: 0 20px;
+}
+
+#testimonials_section #caroussel .item {
+  margin: 30px 0;
   border-radius: 5px;
   padding: 30px 20px;
   background: #fff;
@@ -27,7 +22,8 @@
           box-shadow: 1px 13px 13px -2px rgba(0, 0, 0, 0.21);
 }
 
-#testimonials_section #test_wrapper .testimonial_card #stars {
+#testimonials_section #caroussel .item #stars {
+  width: 20px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +31,7 @@
   gap: 5px;
 }
 
-#testimonials_section #test_wrapper .testimonial_card h4 {
+#testimonials_section #caroussel .item h4 {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
@@ -43,7 +39,7 @@
   font-size: 22px;
 }
 
-#testimonials_section #test_wrapper .testimonial_card div {
+#testimonials_section #caroussel .item div {
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,38 +53,24 @@
           align-items: stretch;
 }
 
-#testimonials_section #test_wrapper .testimonial_card div p {
+#testimonials_section #caroussel .item div p {
   margin: 0;
   padding: 0;
   font-size: 18px;
 }
 
-#testimonials_section #test_wrapper .testimonial_card div p:first-child {
+#testimonials_section #caroussel .item div p:first-child {
   height: 100%;
 }
 
-@media only screen and (max-width: 1080px) {
-  #testimonials_section #test_wrapper {
-    white-space: nowrap;
-    width: calc(2 * 280px);
-    overflow-x: scroll;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding: 20px 50px;
-  }
-  #testimonials_section #test_wrapper .testimonial_card {
-    white-space: normal;
-    min-width: 280px;
+@media only screen and (max-width: 1130px) {
+  #testimonials_section #caroussel {
+    width: calc(100% - 50px);
   }
 }
 
-@media only screen and (max-width: 730px) {
-  #testimonials_section #test_wrapper {
-    width: calc(100% - 60px);
-    padding: 20px 30px;
-  }
-  #testimonials_section #test_wrapper .testimonial_card {
-    min-width: 100% !important;
+@media only screen and (max-width: 760px) {
+  #testimonials_section #caroussel {
+    width: calc(100% - 20px);
   }
 }

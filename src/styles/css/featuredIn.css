@@ -23,33 +23,20 @@
   height: 150px;
   border-radius: 50%;
   background: #CEC8D0;
-  background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#featuredIn_section span div:first-child {
-  background-image: url("../background_images/amazon_logo.png");
-}
-
-#featuredIn_section span div:nth-child(2) {
-  background-image: url("../background_images/parade_logo.png");
-}
-
-#featuredIn_section span div:nth-child(4) {
-  background-image: url("../background_images/examiner_logo.png");
-}
-
-#featuredIn_section span div:nth-child(5) {
-  background-image: url("../background_images/simon&schuster_logo.png");
-}
-
-#featuredIn_section span div:nth-child(6) {
-  background-image: url("../background_images/smiths_logo.png");
-}
-
-#featuredIn_section span div:last-child {
-  background-image: url("../background_images/ulysses_logo.png");
+#featuredIn_section span div img {
+  mix-blend-mode: multiply;
+  width: 80%;
 }
 
 @media only screen and (max-width: 1264px) {

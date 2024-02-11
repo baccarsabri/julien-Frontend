@@ -15,32 +15,13 @@
             border-radius: 50%;
             background: #CEC8D0;
 
-            background-size: 80%;
-            background-position: center;
-            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            &:first-child {
-                background-image: url('../background_images/amazon_logo.png');
-            }
-
-            &:nth-child(2) {
-                background-image: url('../background_images/parade_logo.png');
-            }
-
-            &:nth-child(4) {
-                background-image: url('../background_images/examiner_logo.png');
-            }
-
-            &:nth-child(5) {
-                background-image: url('../background_images/simon&schuster_logo.png');
-            }
-
-            &:nth-child(6) {
-                background-image: url('../background_images/smiths_logo.png');
-            }
-
-            &:last-child {
-                background-image: url('../background_images/ulysses_logo.png');
+            img {
+                mix-blend-mode: multiply;
+                width: 80%;
             }
         }
     }
