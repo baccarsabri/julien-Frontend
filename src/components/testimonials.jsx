@@ -66,7 +66,7 @@ const TestimonialCard = ({ quote, text, name }) => {
 const options = {
     margin: 30,
     responsiveClass: true,
-    nav: true,
+    nav: false,
     dots: true,
     autoplay: true,
     smartSpeed: 1000,
