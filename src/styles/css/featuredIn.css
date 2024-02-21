@@ -4,7 +4,7 @@
 
 #featuredIn_section span {
   margin-top: 100px;
-  gap: 50px 100px;
+  gap: 100px 200px;
   width: calc(100% - 350px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,8 +21,6 @@
 #featuredIn_section span div {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  background: #CEC8D0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,8 +33,7 @@
 }
 
 #featuredIn_section span div img {
-  mix-blend-mode: multiply;
-  width: 80%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1264px) {

@@ -11,7 +11,7 @@ import WhatIs from '../components/what_is';
 import ZoomMeetings from '../components/zoomMeetings';
 import SignUpPopup from "../components/signupPopup";
 
-const countDownDate = "Jan 30, 2024 15:37:25"
+const countDownDate = "Mar 20, 2024 15:37:25"
 
 const LandingPage = () => {
     return (

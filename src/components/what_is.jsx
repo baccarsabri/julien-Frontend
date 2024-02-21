@@ -18,7 +18,7 @@ const WhatIs = () => {
         <InfoStructure
             title="What is Butt Talks?"
             subtitle="Super Charge Your Poop Health"
-            img="./butt_talks_logo.png"
+            img="./butt-talk-gif.gif"
 
             cellData1={ cellData[0] }
             cellData2={ cellData[1] }

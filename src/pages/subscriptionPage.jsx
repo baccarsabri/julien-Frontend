@@ -12,7 +12,7 @@ import InfoFloat from "../components/infoFloat";
 import { useEffect } from "react";
 import SignUpPopup from "../components/signupPopup";
 
-const countDownDate = "Jan 30, 2024 15:37:25"
+const countDownDate = "Mar 20, 2024 15:37:25"
 
 const SubscriptionPage = () => {
     useEffect(() => {

@@ -26,7 +26,7 @@ const InfoStructure = ({ title, subtitle, cellData1, cellData2, img }) => {
                 </span>
 
                 <span id="img">
-                    <img src={ img } alt="Logo" />
+                    <img src={ img } alt="Logo" width={(img == "./butt-talk-gif.gif") ? 350 : ""} />
                 </span>
             </div>
 

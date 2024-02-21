@@ -5,7 +5,6 @@
 
 #zoom_section span {
   margin-top: 50px;
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,10 +12,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
 }
 
 #zoom_section span img {
@@ -24,6 +23,7 @@
 }
 
 #zoom_section span div {
+  width: 500px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +38,8 @@
   padding: 0;
   font-weight: 800;
   font-size: 40px;
+  width: 100%;
+  text-align: left;
 }
 
 #zoom_section span div p {
@@ -63,5 +65,8 @@
   #zoom_section span img {
     height: auto;
     width: 100%;
+  }
+  #zoom_section span div {
+    width: 100% !important;
   }
 }
