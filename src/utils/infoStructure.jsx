@@ -3,11 +3,11 @@ import "../styles/css/infoStructure.css";
 const InfoStructure = ({ title, subtitle, cellData1, cellData2, img }) => {
     return (
         <section class="blobed_background info_structure">
-            <img src="./bg_blob1.svg" className="bg_blob"></img>
-            <img src="./bg_blob2.svg" className="bg_blob"></img>
-            <img src="./bg_blob3.svg" className="bg_blob"></img>
-            <img src="./bg_blob4.svg" className="bg_blob"></img>
-            <img src="./bg_blob5.svg" className="bg_blob"></img>
+            <img alt="blob" src="./bg_blob1.svg" className="bg_blob"></img>
+            <img alt="blob" src="./bg_blob2.svg" className="bg_blob"></img>
+            <img alt="blob" src="./bg_blob3.svg" className="bg_blob"></img>
+            <img alt="blob" src="./bg_blob4.svg" className="bg_blob"></img>
+            <img alt="blob" src="./bg_blob5.svg" className="bg_blob"></img>
 
             <h1>{ title }</h1>
             <h3>{ subtitle }</h3>
@@ -26,7 +26,7 @@ const InfoStructure = ({ title, subtitle, cellData1, cellData2, img }) => {
                 </span>
 
                 <span id="img">
-                    <img src={ img } alt="Logo" width={(img == "./butt-talk-gif.gif") ? 350 : ""} />
+                    <img src={ img } alt="Logo" width={(img === "./butt-talk-gif.gif") ? 350 : ""} />
                 </span>
             </div>
 

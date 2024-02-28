@@ -10,7 +10,7 @@ const Landing = () => {
             <h3>Super Charge Your Poop Health</h3>
 
             <div id="video">
-                <img src="./play.png" />
+                <img alt="Play" src="./play.png" />
             </div>
 
             <button onClick={ showWindow } className="join_button">Ready to join now</button>
