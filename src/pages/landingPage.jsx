@@ -11,28 +11,30 @@ import WhatIs from '../components/what_is';
 import ZoomMeetings from '../components/zoomMeetings';
 import SignUpPopup from "../components/signupPopup";
 
+
 const countDownDate = "Mar 20, 2024 15:37:25"
 
 const LandingPage = () => {
+
     return (
         <>
             <SignUpPopup />
 
             <main>
                 <Landing />
-            
+
                 <Discount countDownDate={countDownDate} />
-            
+
                 <MemberBenefits />
-                <WhatIs />
+                <WhatIs verify={false} />
                 <Socials />
-                <AppSection />
-                <ZoomMeetings />
-                <MeetNurse />
+                <AppSection verify={false} />
+                <ZoomMeetings verify={false} />
+                <MeetNurse verify={false} />
                 <FeaturedIn />
-                <Testimonials />
+                <Testimonials verify={false} />
             </main>
-        
+
             <Footer />
         </>
     );

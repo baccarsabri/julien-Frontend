@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
 import "../styles/css/infoStructure.css";
 
-const InfoStructure = ({ title, subtitle, cellData1, cellData2, img }) => {
+const InfoStructure = ({ title, subtitle, cellData1, cellData2, img, handleClick, verify }) => {
+    const toMembership = () => {
+        // Call the function passed as a prop
+        handleClick();
+    };
     return (
         <section class="blobed_background info_structure">
             <img alt="blob" src="./bg_blob1.svg" className="bg_blob"></img>
@@ -9,28 +14,37 @@ const InfoStructure = ({ title, subtitle, cellData1, cellData2, img }) => {
             <img alt="blob" src="./bg_blob4.svg" className="bg_blob"></img>
             <img alt="blob" src="./bg_blob5.svg" className="bg_blob"></img>
 
-            <h1>{ title }</h1>
-            <h3>{ subtitle }</h3>
+            <h1>{title}</h1>
+            <h3>{subtitle}</h3>
 
             <div id="info_wrapper">
                 <span id="col">
                     <div>
-                        <h3>{ cellData1.title }</h3>
-                        <p>{ cellData1.text }</p>
+                        <h3>{cellData1.title}</h3>
+                        <p>{cellData1.text}</p>
                     </div>
 
                     <div>
-                        <h3>{ cellData2.title }</h3>
-                        <p>{ cellData2.text }</p>    
+                        <h3>{cellData2.title}</h3>
+                        <p>{cellData2.text}</p>
                     </div>
                 </span>
 
                 <span id="img">
-                    <img src={ img } alt="Logo" width={(img === "./butt-talk-gif.gif") ? 350 : ""} />
+                    <img src={img} alt="Logo" width={(img === "./butt-talk-gif.gif") ? 350 : ""} />
                 </span>
             </div>
 
-            <button className="join_button">Ready to join now</button>
+
+            {verify === true ? (
+                <button className="join_button" onClick={toMembership}>Ready to join now</button>
+            ) : (
+                <Link to="/subscription">
+                    <button className="join_button">Ready to join now</button>
+                </Link>
+            )
+            }
+
         </section>
     );
 }

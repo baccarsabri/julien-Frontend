@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/css/benefits.css";
 
 const card_list = [
@@ -12,11 +13,11 @@ const card_list = [
     "Connect With Thousands Of Butt Talks Members Globally"
 ]
 
-const Card = ({text}) => {
-    return(
+const Card = ({ text }) => {
+    return (
         <div className="card">
             <img src="./check.svg" alt="Check" />
-            <p>{ text }</p>
+            <p>{text}</p>
         </div>
     );
 }
@@ -28,11 +29,13 @@ const MemberBenefits = () => {
 
             <div id="card_wrapper">
                 {
-                    card_list.map(data => <Card text={ data } />)
+                    card_list.map(data => <Card text={data} />)
                 }
             </div>
 
-            <button className="join_button">Ready to join now</button>
+            <Link to="/subscription">
+                <button className="join_button">Ready to join now</button>
+            </Link>
         </section>
     );
 }

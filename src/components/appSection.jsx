@@ -13,15 +13,17 @@ const cellData = [
     }
 ]
 
-const AppSection = () => {
+const AppSection = (props) => {
     return (
         <InfoStructure
             title="Butt Talks App"
             subtitle=""
-            img="./app_cap.png"
+            img="https://butttalkstv.com/AppDemo_2_CROPPED.gif"
+            handleClick={props.handleClick}
+            verify={props.verify}
 
-            cellData1={ cellData[0] }
-            cellData2={ cellData[1] }
+            cellData1={cellData[0]}
+            cellData2={cellData[1]}
         />
     );
 }

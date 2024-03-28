@@ -1,6 +1,7 @@
 import "../styles/css/what_is.css";
 import InfoStructure from "../utils/infoStructure";
 
+
 const cellData = [
     {
         "title": "Butt Talks",
@@ -13,15 +14,19 @@ const cellData = [
     }
 ]
 
-const WhatIs = () => {
+const WhatIs = (props) => {
+
     return (
         <InfoStructure
             title="What is Butt Talks?"
             subtitle="Super Charge Your Poop Health"
             img="./butt-talk-gif.gif"
+            handleClick={props.handleClick}
+            verify={props.verify}
 
-            cellData1={ cellData[0] }
-            cellData2={ cellData[1] }
+
+            cellData1={cellData[0]}
+            cellData2={cellData[1]}
         />
     );
 }

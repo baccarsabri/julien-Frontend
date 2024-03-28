@@ -18,6 +18,9 @@ const FeaturedIn = () => {
                 <div>
                     <img src="./background_images/examiner_logo.png" alt="Examiner" />
                 </div>
+
+            </span>
+            <span>
                 <div>
                     <img src="./background_images/simon&schuster_logo.png" alt="Simon & Schuster" />
                 </div>

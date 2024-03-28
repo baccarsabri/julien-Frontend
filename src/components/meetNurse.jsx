@@ -13,15 +13,17 @@ const cellData = [
     }
 ]
 
-const MeetNurse = () => {
+const MeetNurse = (props) => {
     return (
         <InfoStructure
             title="Meet Nurse Wong"
             subtitle=""
             img="./nurse_image.png"
+            handleClick={props.handleClick}
+            verify={props.verify}
 
-            cellData1={ cellData[0] }
-            cellData2={ cellData[1] }
+            cellData1={cellData[0]}
+            cellData2={cellData[1]}
         />
     );
 }

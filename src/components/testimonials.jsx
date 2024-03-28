@@ -3,6 +3,7 @@ import "../styles/css/testimonials.css";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Link } from "react-router-dom";
 
 const testData = [
     {
@@ -53,11 +54,11 @@ const TestimonialCard = ({ quote, text, name }) => {
                 <img src="./star.svg" alt="Star" />
             </span>
 
-            <h4>"{ quote }"</h4>
+            <h4>"{quote}"</h4>
 
             <div>
-                <p>{ text }</p>
-                <p>-{ name }</p>
+                <p>{text}</p>
+                <p>-{name}</p>
             </div>
         </div>
     );
@@ -86,7 +87,11 @@ const options = {
     },
 };
 
-const Testimonials = () => {
+const Testimonials = ({ handleClick, verify }) => {
+    const toMembership = () => {
+        // Call the function passed as a prop
+        handleClick();
+    };
     return (
         <section id="testimonials_section">
             <h1>Testimonials</h1>
@@ -99,15 +104,24 @@ const Testimonials = () => {
                 {
                     testData.map(data =>
                         <TestimonialCard
-                            quote={ data.quote }
-                            text={ data.text }
-                            name={ data.name }
+                            quote={data.quote}
+                            text={data.text}
+                            name={data.name}
                         />
                     )
                 }
             </OwlCarousel>
 
-            <button className="join_button">Ready to join now</button>
+            {verify === true ? (
+                <button className="join_button" onClick={toMembership}>Ready to join now</button>
+            ) : (
+                <Link to="/subscription">
+                    <button className="join_button">Ready to join now</button>
+                </Link>
+            )
+            }
+
+
         </section>
     );
 }

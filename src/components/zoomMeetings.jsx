@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
 import "../styles/css/zoomMeetings.css";
 
-const ZoomMeetings = () => {
+const ZoomMeetings = ({ handleClick, verify }) => {
+    const toMembership = () => {
+        // Call the function passed as a prop
+        handleClick();
+    };
     return (
         <section id="zoom_section">
             <h1>Zoom Meeting</h1>
@@ -14,7 +19,16 @@ const ZoomMeetings = () => {
                 <img src="./zoom_meeting.png" alt="Zoom Meeting" />
             </span>
 
-            <button className="join_button">Ready to join now</button>
+
+            {verify === true ? (
+                <button className="join_button" onClick={toMembership}>Ready to join now</button>
+            ) : (
+                <Link to="/subscription">
+                    <button className="join_button">Ready to join now</button>
+                </Link>
+            )
+            }
+
         </section>
     );
 }

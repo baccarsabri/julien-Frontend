@@ -4,6 +4,12 @@ import ReactDOM from 'react-dom/client';
 import './styles/css/index.css';
 import './styles/css/globals.css';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( <App /> );
+root.render(<React.StrictMode>
+    {/* Wrapping App component inside BrowserRouter component */}
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+</React.StrictMode>);

@@ -11,13 +11,25 @@ import MembershipSection from "../components/membershipSection";
 import InfoFloat from "../components/infoFloat";
 import { useEffect } from "react";
 import SignUpPopup from "../components/signupPopup";
+import React, { useRef } from 'react';
+
 
 const countDownDate = "Mar 20, 2024 15:37:25"
 
 const SubscriptionPage = () => {
     useEffect(() => {
         document.querySelector("body").style.overflow = "auto"
-    }, [])
+    }, []);
+
+    const ScrolToMembership = () => {
+        // Scroll to the element
+        window.scrollTo({
+            top: 750,
+            left: 0,
+            behavior: 'smooth'
+        });
+
+    };
 
     return (
         <>
@@ -33,13 +45,13 @@ const SubscriptionPage = () => {
 
                 <Discount countDownDate={countDownDate} />
 
-                <WhatIs />
+                <WhatIs handleClick={ScrolToMembership} verify={true} />
                 <Socials />
-                <AppSection />
-                <ZoomMeetings />
-                <MeetNurse />
+                <AppSection handleClick={ScrolToMembership} verify={true} />
+                <ZoomMeetings handleClick={ScrolToMembership} verify={true} />
+                <MeetNurse handleClick={ScrolToMembership} verify={true} />
                 <FeaturedIn />
-                <Testimonials />
+                <Testimonials handleClick={ScrolToMembership} verify={true} />
             </main>
         </>
     );

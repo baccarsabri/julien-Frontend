@@ -14,7 +14,7 @@ const Discount = ({ countDownDate }) => {
     const setTime = (formatted_CountDownDate, x) => {
         const now = new Date().getTime();
         const distance = formatted_CountDownDate - now;
-        
+
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -22,12 +22,12 @@ const Discount = ({ countDownDate }) => {
 
         if (distance < 0) {
             setIsShown(false)
-            if(x) clearInterval(x)
+            if (x) clearInterval(x)
 
             return
         }
 
-        if(!isShown) setIsShown(true)
+        if (!isShown) setIsShown(true)
         setTimeUntil({ days, hours, minutes, seconds })
     }
 
@@ -37,11 +37,11 @@ const Discount = ({ countDownDate }) => {
         const formatted_CountDownDate = new Date(countDownDate).getTime();
         setTime(formatted_CountDownDate);
 
-        let x = setInterval(function() {
+        let x = setInterval(function () {
             setTime(formatted_CountDownDate, x)
         }, 1000);
     }, [])
-    
+
     return isShown && (
         <section id="discount_section">
             <h3>Limited one time discount ends in:</h3>
@@ -49,28 +49,28 @@ const Discount = ({ countDownDate }) => {
             <span id="timer_wrapper">
                 <div className="cell">
                     <div id="num">
-                        <h1>{ formatTime(timeUntil.days) }</h1>
+                        <h1>{formatTime(timeUntil.days)}</h1>
                     </div>
                     <h3>DAYS</h3>
                 </div>
 
                 <div className="cell">
                     <div id="num">
-                        <h1>{ formatTime(timeUntil.hours) }</h1>
+                        <h1>{formatTime(timeUntil.hours)}</h1>
                     </div>
                     <h3>HOURS</h3>
                 </div>
 
                 <div className="cell">
                     <div id="num">
-                        <h1>{ formatTime(timeUntil.minutes) }</h1>
+                        <h1>{formatTime(timeUntil.minutes)}</h1>
                     </div>
                     <h3>MINUTES</h3>
                 </div>
 
                 <div className="cell">
                     <div id="num">
-                        <h1>{ formatTime(timeUntil.seconds) }</h1>
+                        <h1>{formatTime(timeUntil.seconds)}</h1>
                     </div>
                     <h3>SECONDS</h3>
                 </div>

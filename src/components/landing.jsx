@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/css/landing.css";
 import BlobbedBackground from "../utils/blobbedBackground";
 
@@ -10,10 +11,12 @@ const Landing = () => {
             <h3>Super Charge Your Poop Health</h3>
 
             <div id="video">
-                <img alt="Play" src="./play.png" />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XjUvB4mPJI0" frameborder="0" allowfullscreen></iframe>
             </div>
 
-            <button onClick={ showWindow } className="join_button">Ready to join now</button>
+            <Link to="/subscription">
+                <button className="join_button">Ready to join now</button>
+            </Link>
         </BlobbedBackground>
     );
 }
